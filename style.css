@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(to top left, rgb(1, 84, 162), rgb(1, 84, 162));
 }
 
 .show-modal {
@@ -27,8 +27,8 @@ body {
   padding: 1.75rem 3.5rem;
   margin: 5rem 2rem;
   border: none;
-  background-color: #fff;
-  color: #444;
+  background-color: rgb(1, 84, 162);
+  color: #fff;
   border-radius: 10rem;
   cursor: pointer;
 }
@@ -47,10 +47,13 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 p {
   font-size: 1.8rem;
+  padding: 20px;
+  text-align: center;
 }
 
 /* -------------------------- */
@@ -64,13 +67,14 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 550px;
 
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  font-weight: 550;
 }
 
 .overlay {
@@ -82,4 +86,17 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+input[type='file'] {
+  display: none;
+}
+.custom-file-upload {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 15px 105px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgb(1, 84, 162);
+  border: none;
 }
